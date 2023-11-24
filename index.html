@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Palabra Oculta sin Dificultad</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" type="text/css" href="style/formulario.css" />
-        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-        <script src="js/adivinapalabra.js" type="text/javascript"></script>
-        <script src="js/ejercicio1.js"></script>	
-    </head>
+  <head>
+    <title>Palabra Oculta sin Dificultad</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style/formulario.css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css" />
+    <script
+      type="module"
+      src="adivinapalabra.js"
+      type="text/javascript"></script>
+    <script type="module" src="ejercicio1.js" type="text/javascript"></script>
+  </head>
 
-    <body>
+  <body>
+    <h3>Adivina la palabra oculta</h3>
 
-        <h3>Adivina la palabra oculta</h3>
-        
-        <form id="formulario" action="#" method="get">
-            <div class="linea_formulario">
-                <label for="letras">Letras</label>
-                <input type="text" name="letras" id="letras" value="" />
+    <form id="formulario" action="#" method="get">
+      <div class="linea_formulario">
+        <label for="letras">Letras</label>
+        <input type="text" name="letras" id="letras" value="" readonly />
 
-                <div class="limpia"> </div>
-            </div>  
+        <div class="limpia"></div>
+      </div>
 
-            <div class="linea_formulario">
-                <label for="palabra" >Palabra</label>
-                <input type="text" name="palabra" id="palabra" />
+      <div class="linea_formulario">
+        <label for="palabra">Palabra</label>
+        <input type="text" name="palabra" id="palabra" />
 
-                <div class="limpia"> </div>
-            </div> 	
-            
-            <div class="linea_formulario">	
-                <input type="button" name="nueva" id="nueva" value="Nueva palabra" disabled  /> 
-                <input type="button" name="solucion" id="solucion" value="Ver solución"    /> 
-                <input type="button" name="finalizar" id="finalizar" value="Finalizar juego"  /> 
-                <div class="limpia"> </div>
-            </div>		
+        <div class="limpia"></div>
+      </div>
 
-            <div id="resultado" class="linea_formulario" >
-            </div>
-            
-            <div id="porcentaje" class="linea_formulario error" style="visibility: hidden;">
-                Porcentaje de aciertos: 
-            </div>
-        </form>
+      <div class="linea_formulario">
+        <input
+          type="button"
+          name="nueva"
+          id="nueva"
+          value="Nueva palabra"
+          disabled />
+        <input
+          type="button"
+          name="solucion"
+          id="solucion"
+          value="Ver solución" />
+        <input
+          type="button"
+          name="finalizar"
+          id="finalizar"
+          value="Finalizar juego" />
+        <div class="limpia"></div>
+      </div>
 
+      <div id="resultado" class="linea_formulario"></div>
 
-    </body>
+      <div
+        id="porcentaje"
+        class="linea_formulario error"
+        style="visibility: hidden">
+        Porcentaje de aciertos:
+      </div>
+    </form>
+  </body>
 </html>
-
-
-
